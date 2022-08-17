@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self Help iEnabler</title>
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <main>
+        <section>
+            <h4>Prospective Students</h4>
+            <p>If you are a prospective student, not registered at this institution, please select the following option:</p>
+            <ul> <!--making this a list to make this piece of information readable-->
+                <li>Apply</li>
+                <li>Register</li>
+                <li>Change Personal Information</li>
+                <li>Get Academic and Other Information</li>
+                <li>Make Payments</li>
+            </ul>
+            <footer>
+                <div>Powered by iTS</div>
+                <div><i class="fa-solid fa-envelope"></i> Contact Us</div>
+            </footer>
+        </section>
+        <section>
+            <img src="/assets/UG-logo.gif" alt="UG Logo">
+            <h3>Registered Users: Login Credentials</h3>
+            <div>
+                <input type="radio" name="users">
+                <label>Student</label>
+                <input type="radio" name="users">
+                <label>Personnel</label>
+                <input type="radio" name="users">
+                <label>Other</label>
+                <input type="radio" name="users">
+                <label>Alumni</label>
+            </div>
+            <div>
+                <label>Student Number:</label>
+                <input type="text">
+                <label>Pin:</label>
+                <input type="password">
+                <p>(5 numeric digits. Do not start with a 0.)</p>
+            </div>
+            <div>
+                <button>Login</button>
+                <div><a href="#">Forgot pin?</a></div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
