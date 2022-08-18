@@ -10,6 +10,28 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .container{
-    display: grid;
-    grid-template-columns: 2fr;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.container__info-sec{
+  width: 35%;
+  padding-top: 3em;
+  background-color: #ddd9d924;
+}
+.container__info{
+  padding-top: 1em;
+  color: rgb(114, 112, 112);
+}
+.container__list{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  padding-top: 3em;
+}
+.container__footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
 }
