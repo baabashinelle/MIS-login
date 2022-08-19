@@ -26,7 +26,7 @@ body {
   font-size: 1.4em;
   color: rgb(8, 68, 117);
 }
-.container__info-sec i {
+.container__info-sec h4 i {
   padding-right: 10px;
 }
 .container__info {
@@ -37,7 +37,7 @@ body {
 .container__list {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
   padding-top: 3em;
   color: rgb(8, 68, 117);
   list-style: none;
@@ -45,6 +45,20 @@ body {
 }
 .container__list i {
   padding-right: 10px;
+  position: relative;
+}
+.container__list li:nth-child(1)::after,
+.container__list li:nth-child(2)::after,
+.container__list li:nth-child(3)::after,
+.container__list li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  left: 3.6%;
+  display: flex;
+  flex-direction: column;
+  width: 1px;
+  height: 28px;
+  background-color: rgba(114, 112, 112, 0.815);
 }
 .container__footer {
   display: flex;
@@ -52,6 +66,11 @@ body {
   justify-content: space-between;
   margin-top: auto;
   padding-bottom: 2em;
+}
+.container__contact,
+.container__contact i {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .container__footer div {
   color: rgba(114, 112, 112, 0.815);
@@ -61,13 +80,13 @@ body {
   flex-direction: column;
   margin-inline: auto;
 }
-.container__login-sec h3{
+.container__login-sec h3 {
   color: rgb(8, 68, 117);
 }
 .container__radio {
   padding-block: 1.5em;
 }
-.container__login-sec label{
+.container__login-sec label {
   color: rgb(8, 68, 117);
 }
 .container__form p {
@@ -81,6 +100,11 @@ body {
   border-radius: 0.3rem;
   height: 35px;
   margin-block: 0.5em;
+  padding-inline: 0.5em;
+}
+.container__form input:focus {
+  border: none;
+  outline: solid 2px rgb(33, 150, 243);
 }
 .container__login-btn {
   width: 100%;
@@ -97,6 +121,6 @@ body {
   text-align: center;
   padding-block: 0.5em;
 }
-.container__link a{
+.container__link a {
   color: rgb(8, 68, 117);
 }
