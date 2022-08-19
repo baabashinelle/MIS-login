@@ -6,52 +6,97 @@
   margin: 0;
   padding: 0;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
 }
-.container{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
-.container__info-sec{
+.container__info-sec {
   display: flex;
   flex-direction: column;
   width: 30%;
   padding-top: 3em;
-  padding-inline: 2em;
+  padding-inline: 3em;
   background-color: #ddd9d924;
 }
-.container__info-sec h4{
+.container__info-sec h4 {
   font-size: 1.4em;
+  color: rgb(8, 68, 117);
 }
-.container__info-sec i{
+.container__info-sec i {
   padding-right: 10px;
 }
-.container__info{
+.container__info {
   padding-top: 1em;
-  color: rgb(114, 112, 112);
+  color: rgba(114, 112, 112, 0.815);
+  line-height: 1.5;
 }
-.container__list{
+.container__list {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
   padding-top: 3em;
+  color: rgb(8, 68, 117);
   list-style: none;
+  cursor: default;
 }
-.container__list i{
+.container__list i {
   padding-right: 10px;
 }
-.container__footer{
+.container__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: auto;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
 }
-.container__login-sec{
+.container__footer div {
+  color: rgba(114, 112, 112, 0.815);
+}
+.container__login-sec {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-inline: auto;
+}
+.container__login-sec h3{
+  color: rgb(8, 68, 117);
+}
+.container__radio {
+  padding-block: 1.5em;
+}
+.container__login-sec label{
+  color: rgb(8, 68, 117);
+}
+.container__form p {
+  padding-top: 0.3em;
+  padding-bottom: 3em;
+  color: rgba(114, 112, 112, 0.815);
+}
+.container__form input {
+  width: 100%;
+  border: 1px #bbb solid;
+  border-radius: 0.3rem;
+  height: 35px;
+  margin-block: 0.5em;
+}
+.container__login-btn {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(33, 150, 243);
+  color: white;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+.container__link {
+  text-align: center;
+  padding-block: 0.5em;
+}
+.container__link a{
+  color: rgb(8, 68, 117);
 }
