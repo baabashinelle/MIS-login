@@ -18,6 +18,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Left Section */
 .container__info-sec {
   width: 30%;
   padding-top: 3em;
@@ -77,6 +79,8 @@ body {
 .container__footer div {
   color: rgba(114, 112, 112, 0.815);
 }
+
+/* Right Section */
 .container__login-sec {
   margin-inline: auto;
 }
