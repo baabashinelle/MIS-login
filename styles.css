@@ -145,22 +145,23 @@ body {
   .container__login-sec h3 {
     text-align: center;
   }
-  .container__radio, .container__form p{
+  .container__radio,
+  .container__form p {
     text-align: center;
   }
-  .container__form{
+  .container__form {
     padding-inline: 2em;
   }
-.container__login-btn{
-  padding-inline: 6em;
-}
+  .container__login-btn {
+    padding-inline: 6em;
+  }
   .container__info-sec {
     width: 100%;
   }
   /* .container__info-sec h4, .container__info{
     text-align: center;
   } */
-  .container__footer{
+  .container__footer {
     margin-block-start: 4em;
     font-size: smaller;
   }
