@@ -6,6 +6,10 @@
   margin: 0;
   padding: 0;
 }
+*:focus {
+  border: none;
+  outline: solid 2px rgb(33, 150, 243);
+}
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -104,10 +108,6 @@ body {
   padding-inline: 0.5em;
   border: 1px #bbb solid;
   border-radius: 0.3rem;
-}
-.container__form input:focus {
-  border: none;
-  outline: solid 2px rgb(33, 150, 243);
 }
 .container__login-btn {
   width: 100%;
