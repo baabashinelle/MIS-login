@@ -56,7 +56,7 @@ body {
 .container__list li:nth-child(4)::after {
   content: "";
   position: absolute;
-  left: 3.6%;
+  left: 3.45rem;
   display: flex;
   flex-direction: column;
   width: 1px;
@@ -149,20 +149,28 @@ body {
   .container__form p {
     text-align: center;
   }
+  .container__form p{
+    padding-block-end: 2em;
+  }
   .container__form {
     padding-inline: 2em;
-  }
-  .container__login-btn {
-    padding-inline: 6em;
   }
   .container__info-sec {
     width: 100%;
   }
-  /* .container__info-sec h4, .container__info{
-    text-align: center;
-  } */
   .container__footer {
     margin-block-start: 4em;
-    font-size: smaller;
+    font-size: small;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 1030px) {
+  .container__info-sec{
+    width: 40%;
+  }
+  .container__footer{
+    font-size: small;
+  }
+  .container__form p{
+    padding-block-end: 2em;
   }
 }
