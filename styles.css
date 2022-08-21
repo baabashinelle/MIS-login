@@ -11,8 +11,7 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
 }
 .container--sections {
   display: flex;
@@ -22,7 +21,7 @@ body {
 /* Left Section */
 .container__info-sec {
   width: 30%;
-  padding-top: 3em;
+  padding-block-start: 3em;
   padding-inline: 3em;
   background-color: #ddd9d924;
 }
@@ -31,10 +30,10 @@ body {
   color: rgb(8, 68, 117);
 }
 .container__info-sec h4 i {
-  padding-right: 10px;
+  padding-inline-end: 10px;
 }
 .container__info {
-  padding-top: 1em;
+  padding-block-start: 1em;
   color: rgba(114, 112, 112, 0.815);
   line-height: 1.5;
 }
@@ -42,13 +41,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  padding-top: 3em;
+  padding-block-start: 3em;
   color: rgb(8, 68, 117);
   list-style: none;
   cursor: default;
 }
 .container__list i {
-  padding-right: 10px;
+  padding-inline-end: 10px;
   position: relative;
 }
 .container__list li:nth-child(1)::after,
@@ -68,8 +67,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: auto;
-  padding-bottom: 2em;
+  margin-block-start: auto;
+  padding-block-end: 2em;
 }
 .container__contact,
 .container__contact i {
@@ -94,8 +93,8 @@ body {
   color: rgb(8, 68, 117);
 }
 .container__form p {
-  padding-top: 0.3em;
-  padding-bottom: 3em;
+  padding-block-start: 0.3em;
+  padding-block-end: 3em;
   color: rgba(114, 112, 112, 0.815);
 }
 .container__form input {
@@ -131,4 +130,38 @@ body {
 }
 .container__link a {
   color: rgb(8, 68, 117);
+}
+
+/* Media Queries */
+@media screen and (max-width: 780px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 2.5em;
+  }
+  .container__login-sec {
+    justify-content: center;
+    align-items: center;
+  }
+  .container__login-sec h3 {
+    text-align: center;
+  }
+  .container__radio, .container__form p{
+    text-align: center;
+  }
+  .container__form{
+    padding-inline: 2em;
+  }
+.container__login-btn{
+  padding-inline: 6em;
+}
+  .container__info-sec {
+    width: 100%;
+  }
+  /* .container__info-sec h4, .container__info{
+    text-align: center;
+  } */
+  .container__footer{
+    margin-block-start: 4em;
+    font-size: smaller;
+  }
 }
